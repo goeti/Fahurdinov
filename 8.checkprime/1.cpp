@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 #include <Windows.h>
 
@@ -9,20 +9,20 @@ int just(int r){
 		//cout<<r%i;
 		if(r % i == 0)
 			return 0;}
-		return 1;}
+	return 1;}
 
 int main()
 {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 	int w;
-	cout<<"Введите натуральное число: ";
+	cout<<"Р’РІРµРґРёС‚Рµ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ: ";
 	cin>>w;
-    if (cin.get() == (int) '\n' && w>0)
-        cout<<just(w)<<" (1-число простое, 0-составное)\n";
-    else
-		cout << "Это не натуральное число\n";
-		//cout<<"Это не число\n";}
+	if (cin.get() == (int) '\n' && w>0)
+		cout<<just(w)<<" (1-С‡РёСЃР»Рѕ РїСЂРѕСЃС‚РѕРµ, 0-СЃРѕСЃС‚Р°РІРЅРѕРµ)\n";
+	else
+		cout << "Р­С‚Рѕ РЅРµ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ\n";
+	//cout<<"Р­С‚Рѕ РЅРµ С‡РёСЃР»Рѕ\n";}
 	//else{cout<<just(w)<<"\n";}
-    return 0;
+	return 0;
 }
