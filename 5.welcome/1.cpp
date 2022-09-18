@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <Windows.h>
 
@@ -9,8 +9,8 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 	string r;
-	cout<<"Ââåäèòå âàøå èìÿ: ";
+	cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð°ÑˆÐµ Ð¸Ð¼Ñ: ";
 	cin >> r;
-	cout<< "Ïðèâåò, " <<r<<"\n";
+	cout<< "ÐŸÑ€Ð¸Ð²ÐµÑ‚, " <<r<<"\n";
     return 0;
 }

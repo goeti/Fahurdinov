@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <Windows.h>
 
@@ -8,14 +8,14 @@ int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-	cout<<"Çàäóìàéòå ÷èñëî N îò 1 äî 100, à ÿ óãàäàþ!\n";
+	cout<<"Ð—Ð°Ð´ÑƒÐ¼Ð°Ð¹Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ N Ð¾Ñ‚ 1 Ð´Ð¾ 100, Ð° Ñ ÑƒÐ³Ð°Ð´Ð°ÑŽ!\n";
 	int n = 50;
 	int k;
 	k= n;
 	int i=0;
 	while (true){
 		i++;
-		cout<<"N áîëüøå "<<k<<" (1 äà, 2 íåò, 3 ðàâíî)?\n";
+		cout<<"N Ð±Ð¾Ð»ÑŒÑˆÐµ "<<k<<" (1 Ð´Ð°, 2 Ð½ÐµÑ‚, 3 Ñ€Ð°Ð²Ð½Ð¾)?\n";
 		int q;
 		cin>>q;
 		n= n/2;
@@ -26,7 +26,7 @@ int main()
 		if (q== 2){
 			k = k- n;}
 		if (q==3){
-			cout<<"Âû çàäóìàëè "<<k<<"\n";
+			cout<<"Ð’Ñ‹ Ð·Ð°Ð´ÑƒÐ¼Ð°Ð»Ð¸ "<<k<<"\n";
 			break;}}
     return 0;
 }
