@@ -6,7 +6,7 @@
 
 using namespace std;
 long double just(int w){
-	if (w==1) return 1;
+	if (w==0) return 1;
 	return w*just(w-1);
 }
 
@@ -19,17 +19,23 @@ int main()
 	while(true){
 		cout<<"Введите натуральное число: ";
 		cin>>w;
-	    if (cin.get() == (int) '\n'){
-			if (w>0 && w<100000){
+		int q = cin.get();
+	    if (q != '.'){
+			if (q == '\n'){
+				if (w<0) {
+					cout << "Это число меньше нуля\n";
+					continue;}
+				if (w>170) {
+					cout << "Это число слишком большое\n";
+					continue;}
 				cout<<just(w)<<"\n";
-				break;}
-			else cout << "Это не натуральное число\n";
-		}
-		    
-		else{
-			cout << "Это не число\n";
-			cin.clear();
-			cin.ignore(32767, '\n');}
+				break;
+			}
+			else cout << "Это не число\n";
+		}    
+		else cout << "Это не целое число\n";
+		cin.clear();
+		cin.ignore(32767, '\n');
 	}
 	return 0;
 }
