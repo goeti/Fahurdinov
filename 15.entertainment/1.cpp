@@ -32,25 +32,26 @@ void checkstr(string& name) {
 	}
 }
 
+
 int main()
 {
 	string films[28] = { "Побег из Шоушенка", "Крёстный отец", "Тёмный рыцарь",
-	    "Крёстный отец 2", "12 разгневанных мужчин", "Список Шиндлера",
+		"Крёстный отец 2", "12 разгневанных мужчин", "Список Шиндлера",
 		"Властелин колец: Возвращение короля", "Криминальное чтиво", "Властелин колец: Братство Кольца",
 		"Хороший, плохой, злой", "Форрест Гамп", "Бойцовский клуб",
 		"Начало", "	Матрица", "Властелин колец: Две крепости", "Славные парни",
 		"Пролетая над гнездом кукушки", "Семь", "Семь самураев", "Эта прекрасная жизнь",
 		"Молчание ягнят", "Город Бога", "Спасти рядового Райана", "Жизнь прекрасна",
-		"Зелёная миля", "Интерстеллар", "Терминатор 2: Судный день", "Назад в будущее"};
-	string people[28] = {"А.С.Пушкин", "Л.Н.Толстой", "М.Горький", "А.П.Чехов", "А.Н.Толстой",
+		"Зелёная миля", "Интерстеллар", "Терминатор 2: Судный день", "Назад в будущее" };
+	string people[28] = { "А.С.Пушкин", "Л.Н.Толстой", "М.Горький", "А.П.Чехов", "А.Н.Толстой",
 		"Н.В.Гоголь", "И.С.Тургенев", "М.Ю.Лермонтов", "Ф.М.Достоевский", "А.И.Куприн", "Н.А.Некрасов",
 		"И.А.Бунин", "В.В.Маяковский", "Д.Н.Мамин - Сибиряк", "В.Г.Короленко", "А.А.Блок", "Н.С.Лесков",
 		"А.Н.Островский", "В.Я.Брюсов", "Б.Л.Пастернак", "С.А.Есенин", "К.Д.Бальмонт", "Ф.И.Тютчев", "А.А.Фет",
-		"И.А.Гончаров", "А.А.Ахматова", "В.А.Жуковский", "А.Белый"};
-	string music[9] = {"«Gangsta’s Paradise» — Coolio", "«(Everything I Do) I Do It for You» — Bryan Adams",
-		"«I Want to Hold Your Hand» — Beatles", "«Macarena» — Los Del Rio", "«Hey Jude» — Beatles", 
-		"«Candle in the Wind» — Elton John", "«I Will Always Love You» — Whitney Houston", 
-		"«You’re the One That I Want» — John Travolta & Olivia Newton-John", "«We Are the World» — USA for Africa"};
+		"И.А.Гончаров", "А.А.Ахматова", "В.А.Жуковский", "А.Белый" };
+	string music[9] = { "«Gangsta’s Paradise» — Coolio", "«(Everything I Do) I Do It for You» — Bryan Adams",
+		"«I Want to Hold Your Hand» — Beatles", "«Macarena» — Los Del Rio", "«Hey Jude» — Beatles",
+		"«Candle in the Wind» — Elton John", "«I Will Always Love You» — Whitney Houston",
+		"«You’re the One That I Want» — John Travolta & Olivia Newton-John", "«We Are the World» — USA for Africa" };
 	setlocale(LC_CTYPE, "rus");
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
@@ -71,7 +72,7 @@ int main()
 		//cout << "1\n";
 		cin >> year;
 		int q = cin.get();
-		if (q != '\n' || year<1900 || year>2022) {
+		if (q != '\n' || year < 1900 || year>2022) {
 			cout << "Некорректный год рождения, введите еще раз: ";
 			continue;
 		}
@@ -80,13 +81,13 @@ int main()
 	char w = tolower(name[0]);
 	char e = tolower(surname[0]);
 	for (int i = 0; i < 28; i++) {
-		if (w == a[i]) cout << films[i]<<endl;
-		if (e == a[i]) cout << people[i]<<endl;
+		if (w == a[i]) cout << films[i] << endl;
+		if (e == a[i]) cout << people[i] << endl;
 	}
 	while (year > 9) {
 		year = sumnumber(year);
 	}
-	cout << music[year-1]<<endl;
+	cout << music[year - 1] << endl;
 
 	return 0;
 }
