@@ -1,6 +1,6 @@
-**.*.vcsproj 
+*.vcxproj 
 **.sln 
 .vs/ 
 x64/ 
-**.*.vcsproj.user 
-**.*.vcsproj.filters 
+*.vcxproj.user 
+*.vcxproj.filters 
