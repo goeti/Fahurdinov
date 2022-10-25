@@ -1,6 +1,6 @@
-**.vcsproj 
+**.*.vcsproj 
 **.sln 
 .vs/ 
 x64/ 
-**.vcsproj.user 
-**.vcsproj.filters 
+**.*.vcsproj.user 
+**.*.vcsproj.filters 
