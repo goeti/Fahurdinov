@@ -1,0 +1,6 @@
+**.vcsproj 
+**.sln 
+.vs/ 
+x64/ 
+**.vcsproj.user 
+**.vcsproj.filters 
