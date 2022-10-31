@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <Windows.h>
 #include <limits> 
@@ -6,13 +6,6 @@
 
 using namespace std;
 
-/*void swap(int* r, int* t) {
-	int w;
-	w = *r;
-	*r = *t;
-	*t = w;
-}*/
-//круто
 void swap1(int& r, int& t) {
 	int w;
 	w = r;
@@ -65,7 +58,7 @@ int main()
 	cin >> r;
 	cin >> t;
 	swap4(r, t);
-	cout << r<<endl;
-	cout << t<<endl;
+	cout << r << endl;
+	cout << t << endl;
 	return 0;
 }
