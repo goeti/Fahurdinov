@@ -25,6 +25,8 @@ void rectangle::get_point() {
 	}
 }
 int rectangle::intersect(rectangle a) {
+	if (x1 > x2) swap(x1, x2);
+	if (y1 > y2) swap(y1, y2);
 	if ((x1 <= a.x1 && a.x1 <= x2) || (x1 <= a.x2 && a.x2 <= x2)) {
 		if ((y1 <= a.y1 && a.y1 <= y2) || (y1 <= a.y2 && a.y2 <= y2)) return 1;
 	}
