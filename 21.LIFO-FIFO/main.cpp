@@ -26,18 +26,5 @@ int main() {
 	add_el(b, n);
 	cout << typeid(a).name() << endl;
 	cout << typeid(b).name() << endl;
-	/*a.push(3);
-	b.push(3);
-	a.print();
-	b.print();
-	a.push(4);
-	b.push(4);
-	a.print();
-	b.print();
-	cout << a.pop() << endl;
-	cout << b.pop() << endl;
-	a.print();
-	b.print();
-	cout << a.pop() << endl;
-	cout << b.pop() << endl;*/
+	return 0;
 }
